@@ -1,0 +1,13 @@
+{
+    "bootstrap": true,
+    "server": true,
+    "datacenter": "exp1",
+    "data_dir": "/var/consul",
+    "encrypt": "[ENCRYPT KEY]",
+    "skip_leave_on_interrupt": true,
+    "leave_on_terminate": false,
+    "advertise_addr": "10.2.4.14",
+    "bind_addr": "10.2.4.14",
+    "domain": "us-west-2.compute.internal"
+
+}
