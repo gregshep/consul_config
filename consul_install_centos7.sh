@@ -17,7 +17,7 @@ mv static/ /home/consul/www/
 
 mkdir -p /etc/consul.d/bootstrap
 mkdir -p /etc/consul.d/server
-cd ~/consul_config
+cd ~centos/consul_config
 cp bootstrap_config.json /etc/consul.d/bootstrap/config.json
 cp server_config.json /etc/consul.d/server/config.json
 cp consul.service /etc/systemd/system/consul.service
