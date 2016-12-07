@@ -13,7 +13,7 @@ mkdir -p /home/consul/www
 mkdir -p /etc/consul.d/{server,bootstrap}
 mv consul /usr/local/bin/
 mv index.html /home/consul/www/
-mv static/ /home/consul/www/
+cp static/ /home/consul/www/
 
 mkdir -p /etc/consul.d/bootstrap
 mkdir -p /etc/consul.d/server
@@ -25,4 +25,4 @@ cp consul.service /etc/systemd/system/consul.service
 systemctl start consul.service
 systemctl enable consul
 
-consul members
+/usr/local/bin/consul members

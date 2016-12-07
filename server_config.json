@@ -6,7 +6,6 @@
     "server": true,
     "datacenter": "exp1",
     "data_dir": "/var/consul",
-    "encrypt": "ENCRYPT KEY",
     "dns_config": {
         "allow_stale": true,
         "max_stale": "15s"
