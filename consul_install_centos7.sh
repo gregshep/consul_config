@@ -17,4 +17,12 @@ mv static/ /home/consul/www/
 
 mkdir -p /etc/consul.d/bootstrap
 mkdir -p /etc/consul.d/server
-touch /etc/consul.d/bootstrap/config.json /etc/consul.d/server/config.json
+cd ~/consul_config
+cp bootstrap_config.json /etc/consul.d/bootstrap/config.json
+cp server_config.json /etc/consul.d/server/config.json
+cp consul.service /etc/systemd/system/consul.service
+
+systemctl start consul.service
+systemctl enable consul
+
+consul members
