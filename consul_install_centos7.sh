@@ -4,8 +4,8 @@ mkdir /tmp/bin
 cd /tmp/bin
 wget https://releases.hashicorp.com/consul/0.7.1/consul_0.7.1_linux_amd64.zip
 wget https://releases.hashicorp.com/consul/0.7.1/consul_0.7.1_web_ui.zip
-unzip consul_0.6.4_web_ui.zip
-unzip consul_0.6.4_linux_amd64.zip
+unzip consul_0.7.1_linux_amd64.zip
+unzip consul_0.7.1_web_ui.zip
 rm *.zip
 
 mkdir /var/consul
